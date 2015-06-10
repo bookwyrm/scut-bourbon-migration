@@ -1,0 +1,19 @@
+{
+  "name": "scut-bourbon-migration",
+  "version": "0.0.0",
+  "authors": [
+    "Matt Vanderpol <matt@vanderpol.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "~4.2.3",
+    "scut": "~1.1.3"
+  }
+}
