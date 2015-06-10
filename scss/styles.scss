@@ -76,3 +76,13 @@ $c-border: #666;
 .bourbon .ratio-box {
   /* Can't find comparable means */
 }
+
+/* Shorthand for border */
+.scut .border {
+  @include scut-border(5px solid $c-border, y n);
+}
+
+.bourbon .border {
+  @include border-width(5px null);
+  border: solid $c-border;
+}

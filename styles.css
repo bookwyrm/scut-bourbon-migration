@@ -106,4 +106,14 @@
 .bourbon .ratio-box {
   /* Can't find comparable means */ }
 
+/* Shorthand for border */
+.scut .border {
+  border-top: 5px solid #666;
+  border-bottom: 5px solid #666; }
+
+.bourbon .border {
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border: solid #666; }
+
 /*# sourceMappingURL=styles.css.map */
