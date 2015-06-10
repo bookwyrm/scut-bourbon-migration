@@ -1,0 +1,78 @@
+@import '../bower_components/scut/dist/scut';
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+$c-border: #666;
+
+/* REM Fallback */
+.scut .rem-fallback {
+  @include scut-rem-fallback(20px);
+}
+
+.bourbon .rem-fallback {
+  // Should probably see about mixin
+  font-size: 20px;
+  font-size: rem(20);
+}
+
+/* Hide Visually (but keep for screen readers) */
+.scut .hide-visually {
+  @include scut-hide-visually;
+}
+
+.bourbon .hide-visually {
+  /* Can't find comparable means */
+}
+
+/* Hide text to support image replacement */
+.scut .image-replacement {
+  @include scut-image-replace;
+}
+
+.bourbon .image-replacement {
+  @include hide-text;
+}
+
+/* Clearfix */
+.scut .clearfix {
+  @include scut-clearfix;
+}
+
+.bourbon .clearfix {
+  @include clearfix;
+}
+
+/* Display a triangle with borders */
+.scut .triangle {
+  @include scut-triangle(right, 16px 8px, $c-border)
+}
+
+.bourbon .triangle {
+  @include triangle(16px 8px, $c-border, right);
+}
+
+/* Shorthand for absolute positioning */
+.scut .absolute {
+  @include scut-absolute(0 n 0 0);
+}
+
+.bourbon .absolute {
+  @include position(absolute, 0 null 0 0);
+}
+
+/* Shorthand for margin */
+.scut .margin {
+  @include scut-margin(1 2 n 5);
+}
+
+.bourbon .margin {
+  @include margin(1 2 null 5);
+}
+
+/* Ratio Box for responsive videos */
+.scut .ratio-box {
+  @include scut-ratio-box(16/9);
+}
+
+.bourbon .ratio-box {
+  /* Can't find comparable means */
+}
